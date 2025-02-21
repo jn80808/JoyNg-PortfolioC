@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="joy ng" content="html">
+    <meta name="author" content="Joy Ng" >
+    <title>My Portfolio</title>
+    <link rel="icon" href="/Assests/duckLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- https://www.youtube.com/watch?v=ldwlOzRvYOU&t=322s -->
+    <!-- navigation bar -->
+    <nav id="desktop-nav">
+        <div class="logo">Joy Ng</div>
+        <div>
+            <ul class="nav-links">
+                <li ><a href="#about">About</a></li>
+                <li ><a href="#experience">Experience</a></li>
+                <li ><a href="#project">Projects</a></li>
+                <li ><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hamburger nav  -->
+    <nav id="hamburger-nav">
+        <div class="logo">Joy Ng</div>
+        <div class="hamburger-menu">
+
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- actual link from toggleMenu -->
+            <div class="menu-links">
+                <li ><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li ><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li ><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li ><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./Assests/Dp1.png" alt="JoyNg profile picture">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title"> Joy Ng </h1>
+            <p class="section__text__p2">Developer</p>
+
+            <!-- cv & contact -->
+            <div class="btn-container">
+                <!-- resume button -->
+                <button 
+                    class="btn btn-color-2"
+                    onclick="window.open('./Assests/Joy Ng.pdf')"
+                >
+                    Download CV
+                </button>
+                <!-- contact button  -->
+                <button 
+                    class="btn btn-color-1"
+                    onclick="location.href ='./#contact'"
+                >
+                    Contact Info
+                </button>
+            </div>
+
+            <!-- linkeind & github -->
+            <div id="socials-container">
+                <img 
+                src="./Assests/linkedin.png" 
+                alt="linkedin profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/joy-n-979958212/'"
+                />
+                <img 
+                src="./Assests/github.png" 
+                alt="github profile"
+                class="icon" 
+                onclick="location.href='https://github.com/jn80808'"
+                />
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img 
+                    src="./Assests/Dp2.png" 
+                    alt="Profile2"
+                    class="about-pic"
+                >
+            </div>
+
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-conatiner">
+                        <img 
+                            src="/Assests/experience.png" 
+                            alt="experience icon"
+                            class="icon"
+                        >
+                        <h3>Experience</h3>
+                        <p>3+ years <br/> IT Industry</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img 
+                        src="/Assests/education.png" 
+                        alt="Education icon"
+                        class="icon"
+                    >
+                    <h3>Education</h3>
+                    <p>B.Sc. Bachelor Degree <br/> Electronics and Communication Engineering</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>👋 Hi, I'm Joy Ng!
+
+                        I'm a passionate and adaptable IT professional with nearly 3 years of experience in <br>
+                        software development, database management, and testing. I thrive on leveraging <br>
+                        technology and data to create innovative solutions and continuously seek out new skills to <br>
+                        expand my knowledge.
+                        
+                        Open to new opportunities—freelance, contractual, or full-time—I am eager to grow and <br>
+                        contribute my expertise to impactful projects. Let's connect and create something extraordinary together! 🚀
+                    </p>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <img 
+            src="./Assests/arrow.png" 
+            alt="Arrow icon" 
+            class="icon arrow"
+            onclick="location.href='./#experience'"
+        />
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
